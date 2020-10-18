@@ -1,0 +1,5 @@
+* { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.page .sideBar { position: fixed; top: 0; left: 0; background-color: #ccc; padding: 15px; width: 250px; height: 100vh; }
+
+/*# sourceMappingURL=main.css.map */
