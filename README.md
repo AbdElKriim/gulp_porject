@@ -1,2 +1,2 @@
-# gulp_porject
+# gulp_project
 beginner gulp project 
