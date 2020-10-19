@@ -1,0 +1,12 @@
+.page{
+    .content_area{
+        width: calc(100% - 250px);
+        height: 100vh;
+        float: right;
+        background-color: red;
+        transition: all .4s ease-in-out;
+        &.hide_menu{
+            width: 100%;
+        }
+    }
+}

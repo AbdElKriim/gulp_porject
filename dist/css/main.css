@@ -1,5 +1,13 @@
 * { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.page .sideBar { position: fixed; top: 0; left: 0; background-color: #ccc; padding: 15px; width: 250px; height: 100vh; }
+.page .sideBar { position: fixed; top: 0; left: 0; background-color: #ccc; padding: 15px; width: 250px; height: 100vh; -webkit-transition: all .4s ease-in-out; transition: all .4s ease-in-out; }
+
+.page .sideBar.hide_menu { left: -250px; }
+
+.toggleMenu { cursor: pointer; }
+
+.page .content_area { width: calc(100% - 250px); height: 100vh; float: right; background-color: red; -webkit-transition: all .4s ease-in-out; transition: all .4s ease-in-out; }
+
+.page .content_area.hide_menu { width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
