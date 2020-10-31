@@ -3,10 +3,33 @@
         width: calc(100% - 250px);
         height: 100vh;
         float: right;
-        background-color: red;
+        background-color: #f2f1f6;
         transition: all .4s ease-in-out;
         &.hide_menu{
             width: 100%;
+        }
+        .myTitle{
+            text-transform: capitalize;
+            position: relative;
+            display: inline-block;
+            &::before{
+                content: "";
+                height: 3px;
+                width: 75%;
+                position: absolute;
+                background-color: var(--mainColor);
+                bottom: -3px;
+                left: 0;
+            }
+            &::after{
+                content: "";
+                height: 3px;
+                width: 55%;
+                position: absolute;
+                background-color: var(--mainColor);
+                bottom: -9px;
+                left: 0;
+            }
         }
     }
 }

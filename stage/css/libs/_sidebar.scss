@@ -1,0 +1,97 @@
+.page{
+    .sideBar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #292c33;
+        padding: 15px;
+        width: 250px;
+        height: 100vh;
+        @extend %timeTransition;
+        &.hide_menu{
+            left: -250px;
+        }
+        .logo{
+            color: #fff;
+            text-align: center;
+            font-size: 30px;
+            text-transform: capitalize;
+            letter-spacing: -3px;
+        }
+        .menuLink{
+            li{
+                a{
+                    color: #e2dcdc;
+                    padding: 10px 20px;
+                    text-transform: capitalize;
+                    display: block;
+                    @extend %timeTransition;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+            >li > a {
+                position: relative;
+                font-size: 16px;
+                &::before{
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    position: absolute;
+                    border-radius: 50%;
+                    border: 2px solid #e2dcdc;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                &:hover{
+                    padding-left: 26px;
+                }
+            }
+            .toggle_chevron{
+                .fa-chevron-right{ 
+                    float: right;
+                    @extend %timeTransition;
+                    &.down{
+                        transform: rotate(90deg);
+                        @extend %timeTransition;
+                    }
+                }
+            }
+
+            .dropMenu{
+                position: relative;
+                display: none;
+                &::before{
+                    content: "";
+                    width: 3px;
+                    height: 100%;
+                    position: absolute;
+                    background-color: #cccccc70;
+                    left: 10px;
+                    top: 0;
+                }
+                a{
+                    position: relative;
+                    &::before{
+                        content: "";
+                        width: 3px;
+                        height: 100%;
+                        background-color: #cccccc70;
+                        position: absolute;
+                        left: 10px;
+                        top: 0;
+                        @extend %timeTransition;
+                    }
+                    &:hover::before{
+                        background-color: #292c3374;
+                        width: 100%;
+                    }
+
+                }
+                
+            }
+        }
+    }
+}

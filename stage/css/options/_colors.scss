@@ -1,0 +1,16 @@
+$themes:(
+    green_theme: (color : #2ecc71),
+    blue_theme: (color : #2980b9),
+    orange_theme: (color : #d35400),
+    red_theme: (color : #c0392b),
+    purple_theme: (color : #8e44ad)
+);
+@each $theme , $val in $themes{
+    .#{$theme}{
+        .page .content_area .myTitle::after,
+        .page .content_area .myTitle::before{
+            background-color: map-get($map: $val, $key: color);
+        }
+        // .page .sideBar .logo{color: map-get($map: $val, $key: color);}
+    }
+}

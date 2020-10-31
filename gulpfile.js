@@ -9,7 +9,7 @@ var gulp = require("gulp"),
     maps    = require("gulp-sourcemaps");
 
 gulp.task("html" , function(){
-    return gulp.src("stage/html/**/*.pug")
+    return gulp.src("stage/html/dashboard.pug")
                 .pipe(pug({pretty : true}))
                 .pipe(gulp.dest("dist"))
                 .pipe(livereload())

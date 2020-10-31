@@ -1,0 +1,45 @@
+.page{
+    .settingSide{
+        width: 300px;
+        height: 100vh;
+        background-color: #fff;
+        position: fixed;
+        right: -300px;
+        top: 0;
+        z-index: 10000;
+        box-shadow: 1px 1px 3px #000;
+        @extend %timeTransition;
+        &.hideSetting{right: 0;}
+        .toggleSetting{
+            position: absolute;
+            top: 100px;
+            left: -50px;
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 5px 0 0 5px;
+            cursor: pointer;
+        }
+        .color_option{
+            ul{
+                $colors : #2ecc71 ,#2980b9 ,#d35400 ,#c0392b ,#8e44ad;
+                @for $i from 1 through length($colors) {
+                    li:nth-child(#{$i}){
+                        background-color: nth($colors , $i);
+                    }
+                }
+                li{
+                    width: 25px;
+                    height: 25px;
+                    display: inline-block;
+                    cursor: pointer;
+                    opacity: .4;
+                    @extend %timeTransition;
+                    &.active{opacity: 1;}
+                }
+            }
+        }
+    }
+}

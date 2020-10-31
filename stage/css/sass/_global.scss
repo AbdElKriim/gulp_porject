@@ -1,5 +1,14 @@
+:root{
+    --mainColor : #292c33
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+}
+%timeTransition{
+    transition: all .4s ease-in-out;
 }

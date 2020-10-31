@@ -1,0 +1,15 @@
+.settingSide
+    .toggleSetting
+        i.fas.fa-cog.fa-lg
+    .settingContent.text-center
+        .optionBox.color_option
+            h4 color option
+            //- -var $colors = ["#2ecc71","#2980b9","#d35400","#c0392b","#8e44ad"]
+            -var $colors = ["green_theme","blue_theme","orange_theme","red_theme","purple_theme"]
+            ul.list-unstyled
+                each $color in $colors
+                    li(data-color = $color)
+        .optionBox.font_option
+            h4 font option
+        .optionBox.sideBar_option
+            h4 sideBar option

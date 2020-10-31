@@ -1,2 +1,43 @@
-
-i.fas.fa-exchange-alt.fa-lg.toggleMenu
+.header
+    .toggleMenu
+        i.fas.fa-angle-double-left.fa-lg.rotate
+    .btn-group
+        i.far.fa-bell.fa-lg#btnGroupDrop1(data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+        .dropdown-menu(aria-labelledby="btnGroupDrop1")
+            .dropdown-head notifications
+                span 28
+            a(href="#").dropdown-item Dropdown link
+            a(href="#").dropdown-item Dropdown link
+            a(href="#").dropdown-item Dropdown link
+            a(href="#").dropdown-foot view more
+    .personal_dropdown
+        .btn-group
+            button.btn.btn-secondary.dropdown-toggle#btnGroupDrop2(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" )
+                .my_picture
+                    img(src="img/1.jpg", alt="")
+                span hello abdEl
+            .dropdown-menu.list-unstyled(aria-labelledby="btnGroupDrop2")
+                .my_info   
+                    h1  abdel krim
+                    p.lead   premium membership  
+                a.dropdown-item(href="#") Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                a.dropdown-item(href="#") Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                a.dropdown-item(href="#") Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                a.dropdown-item(href="#") Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                .footer_drop
+                    .row
+                        .col
+                            .user_tie
+                                i.fas.fa-user-tie.fa-lg
+                                span 
+                                    | setting
+                        .col
+                            .fa_cog
+                                i.fas.fa-cog.fa-lg
+                                span 
+                                    | my profil
+                        .col
+                            .power_off
+                                i.fas.fa-power-off.fa-lg
+                                span 
+                                    | logout
